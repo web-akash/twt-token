@@ -9,7 +9,7 @@ db();
 var abc = jwt.sign({ pass: "aklogic" }, "hi");
 console.log(abc);
 
-app.post("/", function (req, res) {
+app.post("/reg", function (req, res) {
   let { name, email } = req.body;
   let user = new User({
     name: name,
